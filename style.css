@@ -1,0 +1,223 @@
+/*---------------- RESET ---------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------- VARIABLES ---------------- */
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+/*---------------- GLOBAL ---------------- */
+
+body{
+    background-color: var(--background);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--text-title);
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+p, label {
+    color: var(--text-base);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+/*---------------- HEADER ---------------- */
+
+.logo {
+    padding-top: 40px;
+   
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 11px;
+}
+
+main p {
+    margin-bottom: 27px;
+}
+
+/*---------------- FORM ---------------- */
+input {
+    display: flex;
+    background-color: var(--form-background);
+    border: none;
+}
+
+input#email, input#password{
+    width: 374px;
+    height: 44px;
+    color: var(--text-base);
+    border-radius: 4px;
+    border: 1px solid #868686;
+    background-repeat: no-repeat;
+    padding-left: 37px;
+
+    margin-inline: auto;
+}
+
+input#email {
+    background-image: url(/images/mail.svg); 
+    background-position: left;
+    background-position-x: 12px;
+}
+
+input#password {
+    background-image: url(/images/lock.svg), url(/images/eye.svg);
+    background-position: left, right;
+    background-position-x: 12px, 96%;
+}
+
+input#email:focus{
+    background-image: url(/images/mail-focus.svg);
+    border: 3px solid var(--primary-color);
+}
+
+input#password:focus{
+    background-image: url(/images/lock-focus.svg), url(/images/eye.svg);
+    border: 3px solid var(--primary-color);
+}
+
+label.title {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    text-align: start;
+
+    width: 370px;
+    margin: 16px auto 8px auto;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+
+    width: 375px;
+
+}
+
+.checkbox {
+    display: flex; 
+}
+
+.checkbox label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox input + label:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+
+.checkbox input:checked + label:before {
+    background-image: url(/images/check.svg);
+    background-color: var(--primary-color);
+    background-position: center;
+    border: none;
+    padding: 1px;
+}
+
+button {
+    margin-bottom: 16px;
+    width: 374px;
+    height: 51px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+@media(min-width: 1400px) {   
+    header {
+        margin: 0;
+    }
+
+    .background-image {
+        position: absolute;
+        height: 100vh;
+        width: 55vw;
+        left: 45%;
+        z-index: 1;
+        background-image: url(/images/side-image-2x.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: top center;
+
+    }
+
+    .container {
+        margin: 0 40px;
+    }
+
+    .background {
+        background-color: var(--form-background);
+        max-width: 572px;
+        height: 512px;
+        padding: 50px 99px;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+}
+
