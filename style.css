@@ -101,24 +101,24 @@ input#email, input#password{
 }
 
 input#email {
-    background-image: url(/images/mail.svg); 
+    background-image: url(./images/mail.svg); 
     background-position: left;
     background-position-x: 12px;
 }
 
 input#password {
-    background-image: url(/images/lock.svg), url(/images/eye.svg);
+    background-image: url(./images/lock.svg), url(./images/eye.svg);
     background-position: left, right;
     background-position-x: 12px, 96%;
 }
 
 input#email:focus{
-    background-image: url(/images/mail-focus.svg);
+    background-image: url(./images/mail-focus.svg);
     border: 3px solid var(--primary-color);
 }
 
 input#password:focus{
-    background-image: url(/images/lock-focus.svg), url(/images/eye.svg);
+    background-image: url(./images/lock-focus.svg), url(./images/eye.svg);
     border: 3px solid var(--primary-color);
 }
 
@@ -169,7 +169,7 @@ label.title {
 
 
 .checkbox input:checked + label:before {
-    background-image: url(/images/check.svg);
+    background-image: url(./images/check.svg);
     background-color: var(--primary-color);
     background-position: center;
     border: none;
@@ -200,7 +200,7 @@ button {
         width: 55vw;
         left: 45%;
         z-index: 1;
-        background-image: url(/images/side-image-2x.jpg);
+        background-image: url(./images/side-image-2x.jpg);
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: top center;
